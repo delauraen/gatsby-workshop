@@ -10,6 +10,7 @@ function Header({ siteTitle }) {
     { href: "/", name: "Home" },
     { href: "/tickets", name: "Tickets" },
     { href: "/#schedule", name: "Schedule" },
+    { href: "/speakers", name: "Speakers" },
   ];
 
   return (
@@ -22,7 +23,6 @@ function Header({ siteTitle }) {
             {siteTitle}
           </span>
         </Link>
-
         <button
           className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-white"
           onClick={() => toggleExpansion(!isExpanded)}
